@@ -11,34 +11,24 @@ Goto https://developers.line.biz/
 2. create Messaging API
 
 ## Test using line.cli (.Net 3.1)
-1. install line.cli
-
+1. install line.cli<br>
    `dotnet tool install --global line.cli`
-2. set channel access token (at the bottom of 'Messaging API' tag)
-
+2. set channel access token (at the bottom of 'Messaging API' tag)<br>
    `line config -t [channel access token]`
-3. test send message (use 'Your user ID' at the bottom of 'Basic settings' tag)
-
+3. test send message (use 'Your user ID' at the bottom of 'Basic settings' tag)<br>
    `line push -u [userId] -m [message]`
-4. test send sticker
-
+4. test send sticker<br>
    `line push -u [userId] -s [STKPKGID,STKID (ref: https://www.arduinoall.net/arduino-tutor/sticker_list.pdf)]`
-5. test send photo
-
+5. test send photo<br>
    `line push -u [userId] -i [image html (start with https://)]`
 
 ## Create linebot project
-1. Create project folder
-
-   `md [project]`
-
+1. Create project folder<br>
+   `md [project]`<br>
    `cd [project]`
 
-2. Init dotnet project and add linebot sdk
-
-   `dotnet new console`
-
-   `dotnet add package linebotsdk`
-
-   `dotnet build` (test)
-
+2. Init dotnet project and add linebot sdk<br>
+   `dotnet new console`<br>
+   `dotnet add package linebotsdk`<br>
+   `dotnet build` (test)<br>
+   `code .` (open VSCode)
